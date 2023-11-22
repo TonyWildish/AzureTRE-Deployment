@@ -3,8 +3,12 @@ name: Clean Validation Environments
 
 on:  # yamllint disable-line rule:truthy
   schedule:
+    #
+    # TW Too noisy...
     # Every 2 hours
-    - cron: "0 */2 * * *"
+    # - cron: "0 */2 * * *"
+    # December 1st only
+    - cron: "0 4 * 1 12"
   workflow_dispatch:
 
 jobs:
